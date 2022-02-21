@@ -1,0 +1,20 @@
+.time {
+	text-align: center;
+	position: absolute;
+	top: .5rem;
+	right: 1rem;
+
+	/* Time: Sat 19, 6:49 PM */
+
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 28px;
+
+	background: -webkit-linear-gradient(45deg, rgba(200, 4, 232, 1), rgba(177, 50, 255, 1), rgba(119, 124, 255, 1));
+    background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	text-shadow: 0px 1px 4px rgba(48, 0, 109, 0.5);
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto';
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.main-content {
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 4rem 0;
+}
+
+.app-name {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 5rem;
+	line-height: 56px;
+
+	background: -webkit-linear-gradient(45deg, rgb(0, 68, 255), rgb(7, 160, 248), rgba(119, 206, 255, 1));
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	text-shadow: 0px 1px 6px rgba(0, 153, 255, 0.596);
+
+    margin-bottom: 4rem;
+}
