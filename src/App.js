@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './styles/App.css'
+import SimpleBar from 'simplebar-react';
+import 'simplebar/dist/simplebar.min.css';
 
 // Components
 import Clock from './components/Clock';
@@ -15,6 +17,7 @@ function App() {
     <main className="main-content">
       <h1 className="app-name">To-Do App</h1>
        <TaskInput setInputValue={setInputValue} inputValue={inputValue} setTasks={setTasks} tasks={tasks}/>
+       <SimpleBar className="tasks" autoHide={false}>
        {
         //  Loop thru tasks array [] which contains objects
          tasks.map(({text, completed, id})=>(
@@ -23,6 +26,8 @@ function App() {
             </>
          ))
        }
+
+       </SimpleBar>
     </main>    
   </>
 }

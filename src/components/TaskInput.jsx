@@ -14,7 +14,7 @@ const TaskInput = ({inputValue, setInputValue, tasks, setTasks}) => {
     }
 
     return <div className="input-container">
-        <input type="text" className="task-input" onChange={storeAndSetInputValue} onKeyPress={createTaskObjectOnKeyPress} value={inputValue}/>
+        <input type="text" className="task-input" onChange={storeAndSetInputValue} onKeyPress={createTaskObjectOnKeyPress} value={inputValue} autoFocus/>
         <p className="task-count">No tasks, add a task</p>
     </div>
 }

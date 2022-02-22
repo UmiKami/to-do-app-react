@@ -1,3 +1,5 @@
+import '../styles/Task.css'
+
 const Task = ({text, completed, id}) => {
     if(text !== ""){
         return <section className="task-container" key={id}>

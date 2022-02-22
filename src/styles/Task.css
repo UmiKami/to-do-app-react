@@ -1,0 +1,33 @@
+.task-container {
+	width: 100rem;
+	min-height: 6rem;
+
+	background: linear-gradient(101.71deg, #01b5ee 18.21%, #6fd4ff 79.26%);
+	box-shadow: 0px 10px 35px rgb(73, 188, 255);
+	border-radius: 20px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 1.5rem;
+	font-size: 2.8rem;
+	color: white;
+
+	margin-bottom: 5rem;
+}
+
+.task-container:hover .buttons{
+	opacity: 1;
+}
+
+.buttons{
+	opacity: 0;
+	display: flex;
+	transition: opacity .2s ease-in-out;
+}
+
+
+.calendar-btn, .close-btn{
+	padding: 0 .6rem;
+	cursor: pointer;
+}

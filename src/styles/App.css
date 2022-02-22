@@ -37,5 +37,30 @@ body {
 
 	text-shadow: 0px 1px 6px rgba(0, 153, 255, 0.596);
 
-    margin-bottom: 4rem;
+	margin-bottom: 4rem;
+}
+
+/* Simple bar component */
+
+.tasks {
+	padding: 2.2rem 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: auto;
+	width: 110rem;
+}
+
+.simplebar-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.simplebar-scrollbar:before {
+	background: linear-gradient(180deg, #3E74FF 0%, #43BBFF 100%) !important;
+	opacity: 1 !important;
+}
+.simplebar-scrollbar {
+	background-color: linear-gradient(180deg, #3E74FF 0%, #43BBFF 100%) !important;
 }
