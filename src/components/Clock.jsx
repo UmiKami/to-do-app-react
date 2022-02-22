@@ -3,6 +3,8 @@ import '../styles/Clock.css'
 
 const Clock = () => {
     const [time, setTime] = useState()
+    const date = new Date()
+    const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
     useEffect(()=>{
         setInterval(()=>{
@@ -12,7 +14,7 @@ const Clock = () => {
     },[])
 
     return <div className="time">
-        <p>Time: {time}</p>
+        <p>{`${days[date.getDay()]} ${date.getDate()}, ${time}`}</p>
     </div>
 }
 
