@@ -1,10 +1,15 @@
 import '../styles/Task.css';
+// import DateTimePicker from './DateTimePicker'
 
 const Task = ({ key, id, text, completed, tasks, setTasks }) => {
 	const deleteCurrentTask = () => {
 		let newTaskList = tasks.filter((task) => task.id !== id);
 		setTasks(newTaskList);
 	};
+
+    // const renderCalendar = () =>{
+    //     <DateTimePicker/>
+    // }
 
 	return (
 		<section className="task-container" key={key}>
