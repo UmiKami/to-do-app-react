@@ -7,4 +7,4 @@
 
 # Preview
 
-to-do-app-exg.netlify.app
+https://to-do-app-exg.netlify.app/
