@@ -64,3 +64,41 @@ body {
 .simplebar-scrollbar {
 	background-color: linear-gradient(180deg, #3E74FF 0%, #43BBFF 100%) !important;
 }
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+	.input-container, .task-container{
+		width: 90rem !important;
+	}
+}
+@media only screen and (max-width: 960px) {
+	.input-container, .task-container{
+		width: 75rem !important;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.input-container, .task-container{
+		width: 60rem !important;
+	}
+}
+@media only screen and (max-width: 650px) {
+	.input-container, .task-container{
+		width: 50rem !important;
+	}
+}
+@media only screen and (max-width: 550px) {
+	.input-container, .task-container{
+		width: 40rem !important;
+	}
+}
+@media only screen and (max-width: 390px) {
+	.input-container, .task-container{
+		width: 36rem !important;
+	}
+
+	.time{
+		right: 25% !important; 
+	}
+}

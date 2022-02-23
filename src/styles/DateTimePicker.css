@@ -30,7 +30,13 @@
 	box-shadow: 0px 2px 15px rgba(0, 15, 149, 0.5);
 	border-radius: 5px;
     height: 3.5rem;
-    width: 30rem;
+    width: 50rem;
+
+
+	position: relative;
+	right: -19rem;
+	top: 1.5rem;
+	border: none;
 }
 .react-datetimerange-picker__wrapper *{
 	color: white;
@@ -140,4 +146,8 @@ input:focus{
 
 .react-datetimerange-picker__range-divider{
     display: none;
+}
+
+.react-datetimerange-picker__clear-button{
+	display: none;
 }

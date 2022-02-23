@@ -1,5 +1,4 @@
 import '../styles/Task.css';
-// import DateTimePicker from './DateTimePicker'
 
 const Task = ({ key, id, text, completed, tasks, setTasks }) => {
 	const deleteCurrentTask = () => {
@@ -7,12 +6,8 @@ const Task = ({ key, id, text, completed, tasks, setTasks }) => {
 		setTasks(newTaskList);
 	};
 
-    // const renderCalendar = () =>{
-    //     <DateTimePicker/>
-    // }
-
-	return (
-		<section className="task-container" key={key}>
+	return <>
+	<section className="task-container" key={key}>
 			<p className="task-text-content">{text}</p>
 			<div className="buttons">
 				<div className="calendar-btn">
@@ -23,7 +18,8 @@ const Task = ({ key, id, text, completed, tasks, setTasks }) => {
 				</div>
 			</div>
 		</section>
-	);
+	
+	</>
 };
 
 export default Task;
