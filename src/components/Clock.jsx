@@ -12,7 +12,7 @@ const Clock = () => {
             setTime(today.toLocaleTimeString())
         },1000)
     },[])
-
+    
     return <div className="time">
         <p>{`${days[date.getDay()]} ${date.getDate()}, ${time}`}</p>
     </div>
