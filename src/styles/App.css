@@ -58,7 +58,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	
-	outline: 1px solid blue;
+	/* outline: 1px solid blue; */
 }
 
 .simplebar-scrollbar:before {
