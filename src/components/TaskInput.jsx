@@ -18,7 +18,7 @@ const TaskInput = ({inputValue, setInputValue, tasks, setTasks}) => {
     }
 
     return <div className="input-container">
-        <input type="text" className="task-input" onChange={storeAndSetInputValue} onKeyPress={createTaskObjectOnKeyPress} value={inputValue} autoFocus/>
+        <input type="text" className="task-input" onChange={storeAndSetInputValue} onKeyPress={createTaskObjectOnKeyPress} value={inputValue} autoFocus placeholder='What needs to be done?'/>
         <p className="task-count">{tasks.length === 0 ? "No tasks, add a task" : `${tasks.length} item(s) left`}</p>
     </div>
 }
