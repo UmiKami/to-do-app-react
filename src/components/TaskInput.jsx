@@ -7,7 +7,7 @@ const TaskInput = ({inputValue, setInputValue, tasks, setTasks}) => {
             if(value.target.value === ""){
                 return null
             }else{
-                setTasks([...tasks, {text: inputValue, completed: false, key: Math.random() * 10000, id: Math.random()*1000}])
+                setTasks([...tasks, {text: inputValue, completed: false, id: Math.random()*1000}])
                 setInputValue("")
             }
         }

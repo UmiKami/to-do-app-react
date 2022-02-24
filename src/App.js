@@ -20,9 +20,9 @@ function App() {
        <SimpleBar className="tasks" autoHide={false}>
        {
         //  Loop thru tasks array [] which contains objects
-         tasks.map(({text, completed, key, id})=>(
+         tasks.map(({id, text, completed})=>(
             <>
-              <Task key={key} id={id} text={text} comepleted={completed} setTasks={setTasks} tasks={tasks}/>
+              <Task key={id} id={id} text={text} comepleted={completed} setTasks={setTasks} tasks={tasks}/>
             </>
          ))
        }
