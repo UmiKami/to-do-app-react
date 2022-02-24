@@ -5,7 +5,7 @@ const Clock = () => {
     const [time, setTime] = useState()
     const date = new Date()
     const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-
+    
     useEffect(()=>{
         setInterval(()=>{
             const today = new Date()
