@@ -18,7 +18,7 @@ function App() {
 		if (!hasLoaded) {
 			setHasLoaded(true);
 
-			fetch('http://assets.breatheco.de/apis/fake/todos/user/umikami', {
+			fetch('https://assets.breatheco.de/apis/fake/todos/user/umikami', {
 				method: 'GET',
 				headers: {}
 			})
@@ -37,7 +37,7 @@ function App() {
 				});
 		}
 
-		fetch('http://assets.breatheco.de/apis/fake/todos/user/umikami', {
+		fetch('https://assets.breatheco.de/apis/fake/todos/user/umikami', {
 			method: 'PUT',
 
 			headers: {
