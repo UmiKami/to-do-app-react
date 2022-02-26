@@ -12,12 +12,12 @@ function App() {
 	const [ tasks, setTasks ] = useState([]);
 	const [ hasLoaded, setHasLoaded ] = useState(false);
 
-	let counter = 0;
 
 	useEffect(() => {
 		if (!hasLoaded) {
 			setHasLoaded(true);
 
+			// only get the list once
 			fetch('https://assets.breatheco.de/apis/fake/todos/user/umikami', {
 				method: 'GET',
 				headers: {}
@@ -26,8 +26,6 @@ function App() {
 					return response.json();
 				})
 				.then((result) => {
-					counter++;
-					console.log(counter);
 					if (JSON.stringify(result) !== JSON.stringify(tasks)) {
 						setTasks(result);
 					}
@@ -54,7 +52,7 @@ function App() {
 			.catch((err) => {
 				console.error(err);
 			});
-	}, [hasLoaded, tasks, counter]);
+	}, [hasLoaded, tasks]);
 
 	return (
 		<>
