@@ -7,6 +7,7 @@ import 'simplebar/dist/simplebar.min.css';
 import Clock from './components/Clock';
 import TaskInput from './components/TaskInput';
 import Task from './components/Task';
+import { getToDoList, updateToDoList } from './Api';
 
 function App() {
 	const [ tasks, setTasks ] = useState([]);
@@ -18,40 +19,10 @@ function App() {
 			setHasLoaded(true);
 
 			// only get the list once
-			fetch('https://assets.breatheco.de/apis/fake/todos/user/umikami', {
-				method: 'GET',
-				headers: {}
-			})
-				.then((response) => {
-					return response.json();
-				})
-				.then((result) => {
-					if (JSON.stringify(result) !== JSON.stringify(tasks)) {
-						setTasks(result);
-					}
-				})
-				.catch((err) => {
-					console.error(err);
-				});
+			getToDoList(tasks, setTasks)
 		}
 
-		fetch('https://assets.breatheco.de/apis/fake/todos/user/umikami', {
-			method: 'PUT',
-
-			headers: {
-				'Content-Type': 'application/json'
-			},
-			body: JSON.stringify(tasks)
-		})
-			.then((response) => {
-				return response.json();
-			})
-			.then((result) => {
-				console.log(result);
-			})
-			.catch((err) => {
-				console.error(err);
-			});
+		updateToDoList(tasks)
 	}, [hasLoaded, tasks]);
 
 	return (
